@@ -1,4 +1,5 @@
 import javax.swing.*;
+import javax.swing.border.Border;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -16,10 +17,11 @@ public class GUI implements ActionListener {
     label = new JLabel("Click to see results");
 
     JPanel panel = new JPanel();
-    panel.setBorder(BorderFactory.createEmptyBorder(100, 100, 100,100));
+    panel.setBorder(BorderFactory.createEmptyBorder(50, 50, 50,50));
     panel.setLayout(new GridLayout(0 ,1));
     panel.add(button);
     panel.add(label);
+
 
     frame.add(panel, BorderLayout.CENTER);
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -35,7 +37,7 @@ public class GUI implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         Main.instanciateP4Materials(1,0,1,5,
                 2,3,5,6);
-        label.setText(Main.getTotalRessourcesNeeded());
+        label.setText();
 
     }
 

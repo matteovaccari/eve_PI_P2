@@ -160,4 +160,112 @@ public class Main {
        setSelfHarmonizingPowerCoreAttributes(sh1);
 
    }
+
+    public static String getBiocells() {
+        return biocells;
+    }
+
+    public static String getConstructionBlocks() {
+        return constructionBlocks;
+    }
+
+    public static String getConsumerElectronics() {
+        return consumerElectronics;
+    }
+
+    public static String getCoolant() {
+        return coolant;
+    }
+
+    public static String getEnrichedUranium() {
+        return enrichedUranium;
+    }
+
+    public static String getFertilizer() {
+        return fertilizer;
+    }
+
+    public static String getGeniticallyEnhancedLivestock() {
+        return geniticallyEnhancedLivestock;
+    }
+
+    public static String getLivestock() {
+        return livestock;
+    }
+
+    public static String getMechanicalParts() {
+        return mechanicalParts;
+    }
+
+    public static String getMicrofiberShielding() {
+        return microfiberShielding;
+    }
+
+    public static String getNanites() {
+        return nanites;
+    }
+
+    public static String getOxides() {
+        return oxides;
+    }
+
+    public static String getPolyaramids() {
+        return polyaramids;
+    }
+
+    public static String getPolyTextiles() {
+        return polyTextiles;
+    }
+
+    public static String getRocketFuel() {
+        return rocketFuel;
+    }
+
+    public static String getSilicateGlass() {
+        return silicateGlass;
+    }
+
+    public static String getSuperConductors() {
+        return superConductors;
+    }
+
+    public static String getSupertensilePlastics() {
+        return supertensilePlastics;
+    }
+
+    public static String getSynthethicOil() {
+        return synthethicOil;
+    }
+
+    public static String getTestCultures() {
+        return testCultures;
+    }
+
+    public static String getTransmitter() {
+        return transmitter;
+    }
+
+    public static String getViralAgent() {
+        return viralAgent;
+    }
+
+    public static String getWaterCooledCPU() {
+        return waterCooledCPU;
+    }
+
+    public static String getMiniatureElectronics() {
+        return miniatureElectronics;
+    }
+
+    public static String getWater() {
+        return water;
+    }
+
+    public static String getBacteria() {
+        return bacteria;
+    }
+
+    public static String getReactiveMetals() {
+        return reactiveMetals;
+    }
 }
