@@ -6,46 +6,47 @@ import java.awt.event.ActionListener;
 
 public class GUI implements ActionListener {
 
+    JFrame window;
     JLabel label;
+    JButton button;
+    JPanel panel;
 
-    public GUI(){
-    JFrame frame = new JFrame();
+    public GUI() {
+        window = new JFrame("Eve pi P2->P4");
+        window.setVisible(true);
+        window.setSize(600,800);
+        window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-    JButton button = new JButton("Calcul");
-    button.addActionListener(this);
+        panel = new JPanel();
 
-    label = new JLabel("Click to see results");
+        button = new JButton("Calcul");
+        button.addActionListener(this);
 
-    JPanel panel = new JPanel();
-    panel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20,20));
-    panel.setLayout(new GridLayout(0 ,1));
-    panel.setPreferredSize(new Dimension(1000,1500));
-    panel.add(button);
-    panel.add(label);
+        label = new JLabel("Click to see results");
 
+        panel.add(button);
+        panel.add(label);
 
-    frame.add(panel, BorderLayout.CENTER);
-    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    frame.setTitle("PI P2 materials needed for P4");
-    frame.pack();
-    frame.setVisible(true);
-
+        window.add(panel);
+        
     }
+
     public static void main(String[] args) {
         new GUI();
     }
+
     @Override
     public void actionPerformed(ActionEvent e) {
-        Main.instanciateP4Materials(1,0,1,5,
-                2,3,5,6);
-        label.setText("<html>"+Main.getBacteria()+ "<br/>" + Main.getBiocells()+ "<br/>" + Main.getConstructionBlocks()+ "<br/>"
-                +Main.getBacteria()+ "<br/>" + Main.getBiocells()+ "<br/>" +Main.getBacteria()+ "<br/>" + Main.getBiocells()+ "<br/>"
-                +Main.getBacteria()+ "<br/>" + Main.getBiocells()+ "<br/>"+Main.getBacteria()+ "<br/>" + Main.getBiocells()+ "<br/>"
-                +Main.getBacteria()+ "<br/>" + Main.getBiocells()+ "<br/>"+Main.getBacteria()+ "<br/>" + Main.getBiocells()+ "<br/>"
-                +Main.getBacteria()+ "<br/>" + Main.getBiocells()+ "<br/>"+Main.getBacteria()+ "<br/>" + Main.getBiocells()+ "<br/>"
-                +Main.getBacteria()+ "<br/>" + Main.getBiocells()+ "<br/>"+Main.getBacteria()+ "<br/>" + Main.getBiocells()+ "<br/>"
-                +Main.getBacteria()+ "<br/>" + Main.getBiocells()+ "<br/>"+Main.getBacteria()+ "<br/>" + Main.getBiocells()+ "<br/>"
-                +Main.getBacteria()+ "<br/>" + Main.getBiocells()+ "<br/>"+Main.getBacteria()+ "<br/>" + Main.getBiocells()+ "<br/>" +"</html>");
+        Main.instanciateP4Materials(1, 0, 1, 5,
+                2, 3, 5, 6);
+        label.setText("<html>" + Main.getBacteria() + "<br/>" + Main.getBiocells() + "<br/>" + Main.getConstructionBlocks() + "<br/>"
+                + Main.getBacteria() + "<br/>" + Main.getBiocells() + "<br/>" + Main.getBacteria() + "<br/>" + Main.getBiocells() + "<br/>"
+                + Main.getBacteria() + "<br/>" + Main.getBiocells() + "<br/>" + Main.getBacteria() + "<br/>" + Main.getBiocells() + "<br/>"
+                + Main.getBacteria() + "<br/>" + Main.getBiocells() + "<br/>" + Main.getBacteria() + "<br/>" + Main.getBiocells() + "<br/>"
+                + Main.getBacteria() + "<br/>" + Main.getBiocells() + "<br/>" + Main.getBacteria() + "<br/>" + Main.getBiocells() + "<br/>"
+                + Main.getBacteria() + "<br/>" + Main.getBiocells() + "<br/>" + Main.getBacteria() + "<br/>" + Main.getBiocells() + "<br/>"
+                + Main.getBacteria() + "<br/>" + Main.getBiocells() + "<br/>" + Main.getBacteria() + "<br/>" + Main.getBiocells() + "<br/>"
+                + Main.getBacteria() + "<br/>" + Main.getBiocells() + "<br/>" + Main.getBacteria() + "<br/>" + Main.getBiocells() + "<br/>" + "</html>");
 
     }
 
