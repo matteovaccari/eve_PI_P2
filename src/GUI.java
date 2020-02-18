@@ -10,6 +10,7 @@ public class GUI implements ActionListener {
     JLabel label;
     JButton button;
     JPanel panel;
+    JTextField textField;
 
     public GUI() {
         window = new JFrame("Eve pi P2->P4");
@@ -22,13 +23,16 @@ public class GUI implements ActionListener {
         button = new JButton("Calcul");
         button.addActionListener(this);
 
+      //  textField = new JTextField("test");
+
         label = new JLabel("Click to see results");
 
         panel.add(button);
         panel.add(label);
+     //   panel.add(textField);
 
         window.add(panel);
-        
+
     }
 
     public static void main(String[] args) {
