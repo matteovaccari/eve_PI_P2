@@ -118,25 +118,6 @@ public class Main {
        silicateGlass = silicateGlass + broadcastNode.getSilicateGlass();
    }
 
-   public static String getTotalRessourcesNeeded() {
-         String newLine = System.getProperty("line.separator");
-         String result = "Test Cultures x " + testCultures + newLine + "Synthetic Oil x " + synthethicOil + newLine +
-                    "Fertilizer x " + fertilizer + newLine + "Water-Cooled CPU x " + waterCooledCPU + newLine +
-                    "Consumer Electronics x " + consumerElectronics + newLine + "Nanites x " + nanites + newLine +
-                    "Livestock x " + livestock + newLine + "Construction Blocks x " + constructionBlocks + newLine +
-                    "Miniature Electronics x " + miniatureElectronics + newLine + "Water x " + water + newLine +
-                    "Viral Agent x " + viralAgent + newLine + "Silicate Glass x " + silicateGlass + newLine +
-                    "Rocket Fuel x " + rocketFuel + newLine + "Enriched Uranium x " + enrichedUranium + newLine +
-                    "Microfiber Shielding x " + microfiberShielding + newLine + "Polyaramids x " + polyaramids + newLine +
-                    "Genetically Enhanced Livestock x " + geniticallyEnhancedLivestock + newLine +
-                    "Supertensile Plastics x " + supertensilePlastics + newLine + "Transmitter x " + transmitter + newLine +
-                    "Biocells x " + biocells + newLine + "Oxides x " + oxides + newLine + "Coolant x " + coolant + newLine +
-                    "Bacteria x " + bacteria + newLine + "Mechanical Parts x " + mechanicalParts + newLine +
-                    "Polytextiles x " + polyTextiles + newLine + "Reactive Metals x " + reactiveMetals + newLine +
-                    "Superconductors x " + superConductors + newLine;
-       return result;
-   }
-
    public static void instanciateP4Materials(int nbMWetWareMainframe, int nbIntegrityDrones, int nbSterileConduits,
                               int nbBroadcastNode, int nbNanoFactory, int nbOrganicMortarApplicators,
                               int nbRecursiveComputingModule, int nbSelfHarmonizingPowerCore){
@@ -162,110 +143,110 @@ public class Main {
    }
 
     public static String getBiocells() {
-        return biocells;
+        return "Biocells x " + biocells;
     }
 
     public static String getConstructionBlocks() {
-        return constructionBlocks;
+        return "Construction Blocks x " + constructionBlocks;
     }
 
     public static String getConsumerElectronics() {
-        return consumerElectronics;
+        return "Consumer Electronics x " + consumerElectronics;
     }
 
     public static String getCoolant() {
-        return coolant;
+        return "Coolant x " + coolant;
     }
 
     public static String getEnrichedUranium() {
-        return enrichedUranium;
+        return "Enriched Uranium x " + enrichedUranium;
     }
 
     public static String getFertilizer() {
-        return fertilizer;
+        return "Fertilizer x " + fertilizer ;
     }
 
     public static String getGeniticallyEnhancedLivestock() {
-        return geniticallyEnhancedLivestock;
+        return "Genetically Enhanced Livestock x " + geniticallyEnhancedLivestock;
     }
 
     public static String getLivestock() {
-        return livestock;
+        return "Livestock x " + livestock;
     }
 
     public static String getMechanicalParts() {
-        return mechanicalParts;
+        return "Mechanical Parts x " + mechanicalParts;
     }
 
     public static String getMicrofiberShielding() {
-        return microfiberShielding;
+        return "Microfiber Shielding x " + microfiberShielding;
     }
 
     public static String getNanites() {
-        return nanites;
+        return "Nanites x " + nanites;
     }
 
     public static String getOxides() {
-        return oxides;
+        return "Oxides x " + oxides;
     }
 
     public static String getPolyaramids() {
-        return polyaramids;
+        return "Polyaramids x " + polyaramids;
     }
 
     public static String getPolyTextiles() {
-        return polyTextiles;
+        return "Polytextiles x " + polyTextiles ;
     }
 
     public static String getRocketFuel() {
-        return rocketFuel;
+        return "Rocket Fuel x " + rocketFuel ;
     }
 
     public static String getSilicateGlass() {
-        return silicateGlass;
+        return "Silicate Glass x " + silicateGlass;
     }
 
     public static String getSuperConductors() {
-        return superConductors;
+        return  "Superconductors x " + superConductors;
     }
 
     public static String getSupertensilePlastics() {
-        return supertensilePlastics;
+        return "Supertensile Plastics x " + supertensilePlastics;
     }
 
     public static String getSynthethicOil() {
-        return synthethicOil;
+        return "Synthetic Oil x " + synthethicOil;
     }
 
     public static String getTestCultures() {
-        return testCultures;
+        return "Test Cultures x " + testCultures;
     }
 
     public static String getTransmitter() {
-        return transmitter;
+        return "Transmitter x " + transmitter;
     }
 
     public static String getViralAgent() {
-        return viralAgent;
+        return  "Viral Agent x " + viralAgent;
     }
 
     public static String getWaterCooledCPU() {
-        return waterCooledCPU;
+        return "Water-Cooled CPU x " + waterCooledCPU;
     }
 
     public static String getMiniatureElectronics() {
-        return miniatureElectronics;
+        return  "Miniature Electronics x " + miniatureElectronics;
     }
 
     public static String getWater() {
-        return water;
+        return "Water x " + water;
     }
 
     public static String getBacteria() {
-        return bacteria;
+        return "Bacteria x " + bacteria;
     }
 
     public static String getReactiveMetals() {
-        return reactiveMetals;
+        return "Reactive Metals x " + reactiveMetals;
     }
 }
