@@ -17,8 +17,9 @@ public class GUI implements ActionListener {
     label = new JLabel("Click to see results");
 
     JPanel panel = new JPanel();
-    panel.setBorder(BorderFactory.createEmptyBorder(50, 50, 50,50));
+    panel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20,20));
     panel.setLayout(new GridLayout(0 ,1));
+    panel.setPreferredSize(new Dimension(1000,1500));
     panel.add(button);
     panel.add(label);
 
@@ -37,7 +38,14 @@ public class GUI implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         Main.instanciateP4Materials(1,0,1,5,
                 2,3,5,6);
-        label.setText();
+        label.setText("<html>"+Main.getBacteria()+ "<br/>" + Main.getBiocells()+ "<br/>" + Main.getConstructionBlocks()+ "<br/>"
+                +Main.getBacteria()+ "<br/>" + Main.getBiocells()+ "<br/>" +Main.getBacteria()+ "<br/>" + Main.getBiocells()+ "<br/>"
+                +Main.getBacteria()+ "<br/>" + Main.getBiocells()+ "<br/>"+Main.getBacteria()+ "<br/>" + Main.getBiocells()+ "<br/>"
+                +Main.getBacteria()+ "<br/>" + Main.getBiocells()+ "<br/>"+Main.getBacteria()+ "<br/>" + Main.getBiocells()+ "<br/>"
+                +Main.getBacteria()+ "<br/>" + Main.getBiocells()+ "<br/>"+Main.getBacteria()+ "<br/>" + Main.getBiocells()+ "<br/>"
+                +Main.getBacteria()+ "<br/>" + Main.getBiocells()+ "<br/>"+Main.getBacteria()+ "<br/>" + Main.getBiocells()+ "<br/>"
+                +Main.getBacteria()+ "<br/>" + Main.getBiocells()+ "<br/>"+Main.getBacteria()+ "<br/>" + Main.getBiocells()+ "<br/>"
+                +Main.getBacteria()+ "<br/>" + Main.getBiocells()+ "<br/>"+Main.getBacteria()+ "<br/>" + Main.getBiocells()+ "<br/>" +"</html>");
 
     }
 
