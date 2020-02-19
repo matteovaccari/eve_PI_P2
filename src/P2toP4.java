@@ -129,6 +129,36 @@ public class P2toP4 {
 
    }
 
+   public static void reset(){
+       biocells = 0;
+       constructionBlocks = 0;
+       consumerElectronics = 0;
+       coolant = 0;
+       enrichedUranium = 0;
+       fertilizer = 0;
+       geniticallyEnhancedLivestock = 0;
+       livestock = 0;
+       mechanicalParts = 0;
+       microfiberShielding = 0;
+       nanites = 0;
+       oxides = 0;
+       polyaramids = 0;
+       polyTextiles = 0;
+       rocketFuel = 0;
+       silicateGlass = 0;
+       superConductors = 0;
+       supertensilePlastics = 0;
+       synthethicOil = 0;
+       testCultures = 0;
+       transmitter = 0;
+       viralAgent = 0;
+       waterCooledCPU = 0;
+       miniatureElectronics = 0;
+       water = 0;
+       bacteria = 0;
+       reactiveMetals = 0;
+   }
+
     public static String getBiocells() {
         return "Biocells x " + biocells;
     }

@@ -28,7 +28,7 @@ public class GUI implements ActionListener {
     public GUI() {
         window = new JFrame("Eve pi P2->P4");
         window.setVisible(true);
-        window.setSize(600,800);
+        window.setSize(280,700);
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         panel = new JPanel();
@@ -103,7 +103,8 @@ public class GUI implements ActionListener {
                 + P2toP4.getSynthethicOil() + "<br/>" + P2toP4.getTestCultures() + "<br/>" + P2toP4.getTransmitter() + "<br/>" + P2toP4.getViralAgent() + "<br/>"
                 + P2toP4.getWaterCooledCPU() + "<br/>" + P2toP4.getMiniatureElectronics() + "<br/>" + P2toP4.getWater() + "<br/>" + P2toP4.getBacteria() + "<br/>"
                 + P2toP4.getReactiveMetals()+ "<br/>" + "</html>");
-            //to do : reset main.attri
+
+        P2toP4.reset();
     }
 
 
