@@ -87,8 +87,16 @@ public class GUI implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         int nbWetWare = Integer.parseInt(wetWareMainFrame_textField.getText());
-        Main.instanciateP4Materials(nbWetWare, 0, 0, 0,
-                0, 0, 0, 0);
+        int nbBroadcastNode = Integer.parseInt(broadcastNode_textField.getText());
+        int nbIntegrityDrones = Integer.parseInt(integrityDrones_textField.getText());
+        int nbNanoFactory = Integer.parseInt(nanoFactory_textField.getText());
+        int nbOrganicMortarsApplicators = Integer.parseInt(organicMortarApplicators_textField.getText());
+        int nbRecursiveComputingModule = Integer.parseInt(recursiveComputingModule_textField.getText());
+        int nbSelfHarmonizingPowerCore = Integer.parseInt(selfHarmonizingPowerCore_textField.getText());
+        int nbSterileConduits = Integer.parseInt(sterileConduits_textField.getText());
+
+        Main.instanciateP4Materials(nbWetWare, nbIntegrityDrones, nbSterileConduits, nbBroadcastNode,
+                nbNanoFactory, nbOrganicMortarsApplicators, nbRecursiveComputingModule, nbSelfHarmonizingPowerCore);
         result_label.setText("<html>" + Main.getBiocells() + "<br/>" + Main.getConstructionBlocks() + "<br/>"
                 + Main.getConsumerElectronics() + "<br/>" + Main.getCoolant() + "<br/>" + Main.getEnrichedUranium() + "<br/>" + Main.getFertilizer() + "<br/>"
                 + Main.getGeniticallyEnhancedLivestock() + "<br/>" + Main.getLivestock() + "<br/>" + Main.getMechanicalParts() + "<br/>" + Main.getMicrofiberShielding() + "<br/>"
