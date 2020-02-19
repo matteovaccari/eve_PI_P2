@@ -7,10 +7,11 @@ import java.awt.event.ActionListener;
 public class GUI implements ActionListener {
 
     JFrame window;
-    JLabel label;
+    JLabel result_label;
+    JLabel wetWare_MainFrame_label;
     JButton button;
     JPanel panel;
-    JTextField textField;
+    JTextField wetWare_MainFrame_textField;
 
     public GUI() {
         window = new JFrame("Eve pi P2->P4");
@@ -23,13 +24,15 @@ public class GUI implements ActionListener {
         button = new JButton("Calcul");
         button.addActionListener(this);
 
-      //  textField = new JTextField("test");
+        wetWare_MainFrame_textField = new JTextField("test", 10);
 
-        label = new JLabel("Click to see results");
+        result_label = new JLabel("Click to see results");
+        wetWare_MainFrame_label = new JLabel("WetWare Mainframe ?");
 
+        panel.add(wetWare_MainFrame_label);
+        panel.add(wetWare_MainFrame_textField);
         panel.add(button);
-        panel.add(label);
-     //   panel.add(textField);
+        panel.add(result_label);
 
         window.add(panel);
 
@@ -41,9 +44,10 @@ public class GUI implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
+          
         Main.instanciateP4Materials(1, 0, 1, 5,
                 2, 3, 5, 6);
-        label.setText("<html>" + Main.getBacteria() + "<br/>" + Main.getBiocells() + "<br/>" + Main.getConstructionBlocks() + "<br/>"
+        result_label.setText("<html>" + Main.getBacteria() + "<br/>" + Main.getBiocells() + "<br/>" + Main.getConstructionBlocks() + "<br/>"
                 + Main.getBacteria() + "<br/>" + Main.getBiocells() + "<br/>" + Main.getBacteria() + "<br/>" + Main.getBiocells() + "<br/>"
                 + Main.getBacteria() + "<br/>" + Main.getBiocells() + "<br/>" + Main.getBacteria() + "<br/>" + Main.getBiocells() + "<br/>"
                 + Main.getBacteria() + "<br/>" + Main.getBiocells() + "<br/>" + Main.getBacteria() + "<br/>" + Main.getBiocells() + "<br/>"
