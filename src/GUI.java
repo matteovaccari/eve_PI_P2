@@ -18,7 +18,14 @@ public class GUI implements ActionListener {
     JLabel sterileConduits_label;
     JButton button;
     JPanel panel;
-    JTextField wetWare_MainFrame_textField;
+    JTextField wetWareMainFrame_textField;
+    JTextField broadcastNode_textField;
+    JTextField integrityDrones_textField;
+    JTextField nanoFactory_textField;
+    JTextField organicMortarApplicators_textField;
+    JTextField recursiveComputingModule_textField;
+    JTextField selfHarmonizingPowerCore_textField;
+    JTextField sterileConduits_textField;
 
     public GUI() {
         window = new JFrame("Eve pi P2->P4");
@@ -31,13 +38,21 @@ public class GUI implements ActionListener {
         button = new JButton("Calcul");
         button.addActionListener(this);
 
-        wetWare_MainFrame_textField = new JTextField("test", 10);
+        wetWareMainFrame_textField = new JTextField("0", 3);
+        broadcastNode_textField = new JTextField("0",3);
+        integrityDrones_textField = new JTextField("0",3);
+        nanoFactory_textField = new JTextField("0",3);
+        organicMortarApplicators_textField = new JTextField("0",3);
+        recursiveComputingModule_textField = new JTextField("0",3);
+        selfHarmonizingPowerCore_textField = new JTextField("0",3);
+        sterileConduits_textField = new JTextField("0",3);
 
         result_label = new JLabel("Click to see results");
-        wetWare_MainFrame_label = new JLabel("WetWare Mainframe ?");
+        wetWareMainFrame_label = new JLabel("WetWare Mainframe ?");
+        broadCastNode_label = new JLbael
 
-        panel.add(wetWare_MainFrame_label);
-        panel.add(wetWare_MainFrame_textField);
+        panel.add(wetWareMainFrame_label);
+        panel.add(wetWareMainFrame_textField);
         panel.add(button);
         panel.add(result_label);
 
@@ -51,7 +66,7 @@ public class GUI implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        int nbWetWare = Integer.parseInt(wetWare_MainFrame_textField.getText());
+        int nbWetWare = Integer.parseInt(wetWareMainFrame_textField.getText());
         Main.instanciateP4Materials(nbWetWare, 0, 0, 0,
                 0, 0, 0, 0);
         result_label.setText("<html>" + Main.getBiocells() + "<br/>" + Main.getConstructionBlocks() + "<br/>"
