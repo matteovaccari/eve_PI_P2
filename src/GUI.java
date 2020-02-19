@@ -44,18 +44,18 @@ public class GUI implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-          
-        Main.instanciateP4Materials(1, 0, 1, 5,
-                2, 3, 5, 6);
-        result_label.setText("<html>" + Main.getBacteria() + "<br/>" + Main.getBiocells() + "<br/>" + Main.getConstructionBlocks() + "<br/>"
-                + Main.getBacteria() + "<br/>" + Main.getBiocells() + "<br/>" + Main.getBacteria() + "<br/>" + Main.getBiocells() + "<br/>"
-                + Main.getBacteria() + "<br/>" + Main.getBiocells() + "<br/>" + Main.getBacteria() + "<br/>" + Main.getBiocells() + "<br/>"
-                + Main.getBacteria() + "<br/>" + Main.getBiocells() + "<br/>" + Main.getBacteria() + "<br/>" + Main.getBiocells() + "<br/>"
-                + Main.getBacteria() + "<br/>" + Main.getBiocells() + "<br/>" + Main.getBacteria() + "<br/>" + Main.getBiocells() + "<br/>"
-                + Main.getBacteria() + "<br/>" + Main.getBiocells() + "<br/>" + Main.getBacteria() + "<br/>" + Main.getBiocells() + "<br/>"
-                + Main.getBacteria() + "<br/>" + Main.getBiocells() + "<br/>" + Main.getBacteria() + "<br/>" + Main.getBiocells() + "<br/>"
-                + Main.getBacteria() + "<br/>" + Main.getBiocells() + "<br/>" + Main.getBacteria() + "<br/>" + Main.getBiocells() + "<br/>" + "</html>");
-
+        int nbWetWare = Integer.parseInt(wetWare_MainFrame_textField.getText());
+        Main.instanciateP4Materials(nbWetWare, 0, 0, 0,
+                0, 0, 0, 0);
+        result_label.setText("<html>" + Main.getBiocells() + "<br/>" + Main.getConstructionBlocks() + "<br/>"
+                + Main.getConsumerElectronics() + "<br/>" + Main.getCoolant() + "<br/>" + Main.getEnrichedUranium() + "<br/>" + Main.getFertilizer() + "<br/>"
+                + Main.getGeniticallyEnhancedLivestock() + "<br/>" + Main.getLivestock() + "<br/>" + Main.getMechanicalParts() + "<br/>" + Main.getMicrofiberShielding() + "<br/>"
+                + Main.getNanites() + "<br/>" + Main.getOxides() + "<br/>" + Main.getPolyaramids() + "<br/>" + Main.getPolyTextiles() + "<br/>"
+                + Main.getRocketFuel() + "<br/>" + Main.getSilicateGlass() + "<br/>" + Main.getSuperConductors() + "<br/>" + Main.getSupertensilePlastics() + "<br/>"
+                + Main.getSynthethicOil() + "<br/>" + Main.getTestCultures() + "<br/>" + Main.getTransmitter() + "<br/>" + Main.getViralAgent() + "<br/>"
+                + Main.getWaterCooledCPU() + "<br/>" + Main.getMiniatureElectronics() + "<br/>" + Main.getWater() + "<br/>" + Main.getBacteria() + "<br/>"
+                + Main.getReactiveMetals()+ "<br/>"+ "</html>");
+            //to do : reset main.attri
     }
 
 
