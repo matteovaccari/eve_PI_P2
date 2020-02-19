@@ -49,7 +49,13 @@ public class GUI implements ActionListener {
 
         result_label = new JLabel("Click to see results");
         wetWareMainFrame_label = new JLabel("WetWare Mainframe ?");
-        broadCastNode_label = new JLbael
+        broadCastNode_label = new JLabel("Broadcast Node ?");
+        integrityDrones_label = new JLabel("Integrity Response Drones ?");
+        nanoFactory_label = new JLabel("Nano-Factory");
+        organicMortarApplicators_label = new JLabel("Organic Mortar Applicators ?");
+        recursiveComputingModule_label = new JLabel("Recursive Computing Module ?");
+        selfHarmonizingModule_label = new JLabel("Self-Harmonizing Module ?");
+        sterileConduits_label = new JLabel("Sterile Conduits ?");
 
         panel.add(wetWareMainFrame_label);
         panel.add(wetWareMainFrame_textField);
