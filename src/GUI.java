@@ -1,6 +1,4 @@
 import javax.swing.*;
-import javax.swing.border.Border;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -95,16 +93,16 @@ public class GUI implements ActionListener {
         int nbSelfHarmonizingPowerCore = Integer.parseInt(selfHarmonizingPowerCore_textField.getText());
         int nbSterileConduits = Integer.parseInt(sterileConduits_textField.getText());
 
-        Main.instanciateP4Materials(nbWetWare, nbIntegrityDrones, nbSterileConduits, nbBroadcastNode,
+        P2toP4.instanciateP4Materials(nbWetWare, nbIntegrityDrones, nbSterileConduits, nbBroadcastNode,
                 nbNanoFactory, nbOrganicMortarsApplicators, nbRecursiveComputingModule, nbSelfHarmonizingPowerCore);
-        result_label.setText("<html>" + Main.getBiocells() + "<br/>" + Main.getConstructionBlocks() + "<br/>"
-                + Main.getConsumerElectronics() + "<br/>" + Main.getCoolant() + "<br/>" + Main.getEnrichedUranium() + "<br/>" + Main.getFertilizer() + "<br/>"
-                + Main.getGeniticallyEnhancedLivestock() + "<br/>" + Main.getLivestock() + "<br/>" + Main.getMechanicalParts() + "<br/>" + Main.getMicrofiberShielding() + "<br/>"
-                + Main.getNanites() + "<br/>" + Main.getOxides() + "<br/>" + Main.getPolyaramids() + "<br/>" + Main.getPolyTextiles() + "<br/>"
-                + Main.getRocketFuel() + "<br/>" + Main.getSilicateGlass() + "<br/>" + Main.getSuperConductors() + "<br/>" + Main.getSupertensilePlastics() + "<br/>"
-                + Main.getSynthethicOil() + "<br/>" + Main.getTestCultures() + "<br/>" + Main.getTransmitter() + "<br/>" + Main.getViralAgent() + "<br/>"
-                + Main.getWaterCooledCPU() + "<br/>" + Main.getMiniatureElectronics() + "<br/>" + Main.getWater() + "<br/>" + Main.getBacteria() + "<br/>"
-                + Main.getReactiveMetals()+ "<br/>" + "</html>");
+        result_label.setText("<html>" + P2toP4.getBiocells() + "<br/>" + P2toP4.getConstructionBlocks() + "<br/>"
+                + P2toP4.getConsumerElectronics() + "<br/>" + P2toP4.getCoolant() + "<br/>" + P2toP4.getEnrichedUranium() + "<br/>" + P2toP4.getFertilizer() + "<br/>"
+                + P2toP4.getGeniticallyEnhancedLivestock() + "<br/>" + P2toP4.getLivestock() + "<br/>" + P2toP4.getMechanicalParts() + "<br/>" + P2toP4.getMicrofiberShielding() + "<br/>"
+                + P2toP4.getNanites() + "<br/>" + P2toP4.getOxides() + "<br/>" + P2toP4.getPolyaramids() + "<br/>" + P2toP4.getPolyTextiles() + "<br/>"
+                + P2toP4.getRocketFuel() + "<br/>" + P2toP4.getSilicateGlass() + "<br/>" + P2toP4.getSuperConductors() + "<br/>" + P2toP4.getSupertensilePlastics() + "<br/>"
+                + P2toP4.getSynthethicOil() + "<br/>" + P2toP4.getTestCultures() + "<br/>" + P2toP4.getTransmitter() + "<br/>" + P2toP4.getViralAgent() + "<br/>"
+                + P2toP4.getWaterCooledCPU() + "<br/>" + P2toP4.getMiniatureElectronics() + "<br/>" + P2toP4.getWater() + "<br/>" + P2toP4.getBacteria() + "<br/>"
+                + P2toP4.getReactiveMetals()+ "<br/>" + "</html>");
             //to do : reset main.attri
     }
 

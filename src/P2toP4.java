@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class P2toP4 {
 
     static int biocells;
     static int constructionBlocks;
@@ -29,19 +29,6 @@ public class Main {
     static int water;
     static int bacteria;
     static int reactiveMetals;
-
-
-    public static void main(String args[]) {
-
-    /*    System.out.println("Wetware mainframe?");
-        Scanner scan = new Scanner(System.in);
-        int wm = scan.nextInt();  */
-
-
-
-
-
-    }
 
    public static void setWetwareAttributes(WetwareMainframe wetwareMainframe) {
        testCultures = testCultures + wetwareMainframe.getTestCultures();
