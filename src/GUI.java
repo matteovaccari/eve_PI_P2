@@ -59,6 +59,20 @@ public class GUI implements ActionListener {
 
         panel.add(wetWareMainFrame_label);
         panel.add(wetWareMainFrame_textField);
+        panel.add(broadCastNode_label);
+        panel.add(broadcastNode_textField);
+        panel.add(integrityDrones_label);
+        panel.add(integrityDrones_textField);
+        panel.add(nanoFactory_label);
+        panel.add(nanoFactory_textField);
+        panel.add(organicMortarApplicators_label);
+        panel.add(organicMortarApplicators_textField);
+        panel.add(recursiveComputingModule_label);
+        panel.add(recursiveComputingModule_textField);
+        panel.add(selfHarmonizingModule_label);
+        panel.add(selfHarmonizingPowerCore_textField);
+        panel.add(sterileConduits_label);
+        panel.add(sterileConduits_textField);
         panel.add(button);
         panel.add(result_label);
 
