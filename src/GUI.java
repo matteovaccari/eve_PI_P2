@@ -8,7 +8,14 @@ public class GUI implements ActionListener {
 
     JFrame window;
     JLabel result_label;
-    JLabel wetWare_MainFrame_label;
+    JLabel wetWareMainFrame_label;
+    JLabel broadCastNode_label;
+    JLabel integrityDrones_label;
+    JLabel nanoFactory_label;
+    JLabel organicMortarApplicators_label;
+    JLabel recursiveComputingModule_label;
+    JLabel selfHarmonizingModule_label;
+    JLabel sterileConduits_label;
     JButton button;
     JPanel panel;
     JTextField wetWare_MainFrame_textField;
@@ -54,7 +61,7 @@ public class GUI implements ActionListener {
                 + Main.getRocketFuel() + "<br/>" + Main.getSilicateGlass() + "<br/>" + Main.getSuperConductors() + "<br/>" + Main.getSupertensilePlastics() + "<br/>"
                 + Main.getSynthethicOil() + "<br/>" + Main.getTestCultures() + "<br/>" + Main.getTransmitter() + "<br/>" + Main.getViralAgent() + "<br/>"
                 + Main.getWaterCooledCPU() + "<br/>" + Main.getMiniatureElectronics() + "<br/>" + Main.getWater() + "<br/>" + Main.getBacteria() + "<br/>"
-                + Main.getReactiveMetals()+ "<br/>"+ "</html>");
+                + Main.getReactiveMetals()+ "<br/>" + "</html>");
             //to do : reset main.attri
     }
 
