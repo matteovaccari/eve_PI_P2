@@ -45,7 +45,7 @@ public class GUI implements ActionListener {
         selfHarmonizingPowerCore_textField = new JTextField("0",3);
         sterileConduits_textField = new JTextField("0",3);
 
-        result_label = new JLabel("Click to see results");
+        result_label = new JLabel("<html>Click to see results" + "<br/>" + "You have to put 0 and not let fields empty</html>");
         wetWareMainFrame_label = new JLabel("WetWare Mainframe ?");
         broadCastNode_label = new JLabel("Broadcast Node ?");
         integrityDrones_label = new JLabel("Integrity Response Drones ?");
@@ -75,7 +75,7 @@ public class GUI implements ActionListener {
         panel.add(result_label);
 
         window.add(panel);
-
+        window.validate();
     }
 
     public static void main(String[] args) {
