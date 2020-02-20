@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 public class GUI implements ActionListener {
 
     JFrame window;
-    JLabel result_label;
+    JTextArea result_label;
     JLabel wetWareMainFrame_label;
     JLabel broadCastNode_label;
     JLabel integrityDrones_label;
@@ -28,7 +28,7 @@ public class GUI implements ActionListener {
     public GUI() {
         window = new JFrame("Eve pi P2->P4");
         window.setVisible(true);
-        window.setSize(280,700);
+        window.setSize(280, 700);
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         panel = new JPanel();
@@ -37,15 +37,17 @@ public class GUI implements ActionListener {
         button.addActionListener(this);
 
         wetWareMainFrame_textField = new JTextField("0", 3);
-        broadcastNode_textField = new JTextField("0",3);
-        integrityDrones_textField = new JTextField("0",3);
-        nanoFactory_textField = new JTextField("0",3);
-        organicMortarApplicators_textField = new JTextField("0",3);
-        recursiveComputingModule_textField = new JTextField("0",3);
-        selfHarmonizingPowerCore_textField = new JTextField("0",3);
-        sterileConduits_textField = new JTextField("0",3);
+        broadcastNode_textField = new JTextField("0", 3);
+        integrityDrones_textField = new JTextField("0", 3);
+        nanoFactory_textField = new JTextField("0", 3);
+        organicMortarApplicators_textField = new JTextField("0", 3);
+        recursiveComputingModule_textField = new JTextField("0", 3);
+        selfHarmonizingPowerCore_textField = new JTextField("0", 3);
+        sterileConduits_textField = new JTextField("0", 3);
 
-        result_label = new JLabel("<html>Click to see results" + "<br/>" + "You have to put 0 and not let fields empty</html>");
+        result_label = new JTextArea("Click to see results" + "\n" + "You have to put 0 and not let fields empty");
+        result_label.setEditable(false);
+        result_label.setBackground(null); //this is the same as a JLabel
         wetWareMainFrame_label = new JLabel("WetWare Mainframe ?");
         broadCastNode_label = new JLabel("Broadcast Node ?");
         integrityDrones_label = new JLabel("Integrity Response Drones ?");
@@ -95,16 +97,17 @@ public class GUI implements ActionListener {
 
         P2toP4.instanciateP4Materials(nbWetWare, nbIntegrityDrones, nbSterileConduits, nbBroadcastNode,
                 nbNanoFactory, nbOrganicMortarsApplicators, nbRecursiveComputingModule, nbSelfHarmonizingPowerCore);
-        result_label.setText("<html>" + P2toP4.getBiocells() + "<br/>" + P2toP4.getConstructionBlocks() + "<br/>"
-                + P2toP4.getConsumerElectronics() + "<br/>" + P2toP4.getCoolant() + "<br/>" + P2toP4.getEnrichedUranium() + "<br/>" + P2toP4.getFertilizer() + "<br/>"
-                + P2toP4.getGeniticallyEnhancedLivestock() + "<br/>" + P2toP4.getLivestock() + "<br/>" + P2toP4.getMechanicalParts() + "<br/>" + P2toP4.getMicrofiberShielding() + "<br/>"
-                + P2toP4.getNanites() + "<br/>" + P2toP4.getOxides() + "<br/>" + P2toP4.getPolyaramids() + "<br/>" + P2toP4.getPolyTextiles() + "<br/>"
-                + P2toP4.getRocketFuel() + "<br/>" + P2toP4.getSilicateGlass() + "<br/>" + P2toP4.getSuperConductors() + "<br/>" + P2toP4.getSupertensilePlastics() + "<br/>"
-                + P2toP4.getSynthethicOil() + "<br/>" + P2toP4.getTestCultures() + "<br/>" + P2toP4.getTransmitter() + "<br/>" + P2toP4.getViralAgent() + "<br/>"
-                + P2toP4.getWaterCooledCPU() + "<br/>" + P2toP4.getMiniatureElectronics() + "<br/>" + P2toP4.getWater() + "<br/>" + P2toP4.getBacteria() + "<br/>"
-                + P2toP4.getReactiveMetals()+ "<br/>" + "</html>");
+        result_label.setText(P2toP4.getBiocells() + "\n" + P2toP4.getConstructionBlocks() + "\n" + P2toP4.getConsumerElectronics() +
+                "\n" + P2toP4.getCoolant() + "\n" + P2toP4.getEnrichedUranium() + "\n" + P2toP4.getFertilizer() + "\n"
+                + P2toP4.getGeniticallyEnhancedLivestock() + "\n" + P2toP4.getLivestock() + "\n" + P2toP4.getMechanicalParts() + "\n" + P2toP4.getMicrofiberShielding() + "\n"
+                + P2toP4.getNanites() + "\n" + P2toP4.getOxides() + "\n" + P2toP4.getPolyaramids() + "\n" + P2toP4.getPolyTextiles() + "\n"
+                + P2toP4.getRocketFuel() + "\n" + P2toP4.getSilicateGlass() + "\n" + P2toP4.getSuperConductors() + "\n" + P2toP4.getSupertensilePlastics() + "\n"
+                + P2toP4.getSynthethicOil() + "\n" + P2toP4.getTestCultures() + "\n" + P2toP4.getTransmitter() + "\n" + P2toP4.getViralAgent() + "\n"
+                + P2toP4.getWaterCooledCPU() + "\n" + P2toP4.getMiniatureElectronics() + "\n" + P2toP4.getWater() + "\n" + P2toP4.getBacteria() + "\n"
+                + P2toP4.getReactiveMetals());
 
         P2toP4.reset();
+
     }
 
 
