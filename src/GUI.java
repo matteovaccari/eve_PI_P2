@@ -54,7 +54,7 @@ public class GUI implements ActionListener {
         nanoFactory_label = new JLabel("Nano-Factory");
         organicMortarApplicators_label = new JLabel("Organic Mortar Applicators ?");
         recursiveComputingModule_label = new JLabel("Recursive Computing Module ?");
-        selfHarmonizingModule_label = new JLabel("Self-Harmonizing Module ?");
+        selfHarmonizingModule_label = new JLabel("Self-Harmonizing Power Core ?");
         sterileConduits_label = new JLabel("Sterile Conduits ?");
 
         panel.add(wetWareMainFrame_label);
